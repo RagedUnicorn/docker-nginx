@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  nginx:
+    build: .
+    image: ragedunicorn/nginx:1.0.0-stable
+    ports:
+      - "80:80"
+    labels:
+      com.ragedunicorn.nginx.environment: "prod"
+      com.ragedunicorn.nginx.description: "Nginx container"

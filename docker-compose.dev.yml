@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  nginx:
+    build: .
+    image: ragedunicorn/nginx:1.0.0-dev
+    ports:
+      - "80:80"
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/sh
+    labels:
+      com.ragedunicorn.nginx.environment: "dev"
+      com.ragedunicorn.nginx.description: "Nginx container"
