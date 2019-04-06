@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.9.2
 
 LABEL com.ragedunicorn.maintainer="Michael Wiesendanger <michael.wiesendanger@gmail.com>"
 
@@ -12,15 +12,15 @@ LABEL com.ragedunicorn.maintainer="Michael Wiesendanger <michael.wiesendanger@gm
 # software versions
 ENV \
   NGINX_VERSION=1.15.8 \
-  GCC_VERSION=6.4.0-r9 \
+  GCC_VERSION=8.2.0-r2 \
   LIBC_DEV_VERSION=0.7.1-r0 \
   MAKE_VERSION=4.2.1-r2 \
-  OPENSSL_DEV_VERSION=1.0.2q-r0 \
-  PCRE_DEV_VERSION=8.42-r0 \
+  OPENSSL_DEV_VERSION=1.1.1b-r1 \
+  PCRE_DEV_VERSION=8.42-r1 \
   ZLIB_DEV_VERSION=1.2.11-r1 \
-  LINUX_HEADERS_VERSION=4.4.6-r2 \
-  CURL_VERSION=7.61.1-r1 \
-  GNUPG_VERSION=2.2.8-r0 \
+  LINUX_HEADERS_VERSION=4.18.13-r1 \
+  CURL_VERSION=7.64.0-r1 \
+  GNUPG_VERSION=2.2.12-r0 \
   LIBXSLT_DEV_VERSION=1.1.32-r0 \
   GD_DEV_VERSION=2.2.5-r1 \
   GEOIP_DEV=1.6.12-r1
