@@ -129,13 +129,17 @@ RUN \
   ln -sf /dev/stdout /var/log/nginx/access.log; \
   ln -sf /dev/stderr /var/log/nginx/error.log
 
-# add launch script
-COPY docker-entrypoint.sh /
+  # add healthcheck script
+  COPY docker-healthcheck.sh /
+
+  # add launch script
+  COPY docker-entrypoint.sh /
 
 RUN \
   mkdir "${NGINX_CACHE_DIRECTORY}"; \
   chown "${NGINX_USER}":"${NGINX_GROUP}" "${NGINX_CACHE_DIRECTORY}"; \
-  chmod 755 docker-entrypoint.sh
+  chmod 755 docker-entrypoint.sh && \
+  chmod 755 /docker-healthcheck.sh
 
 COPY config/nginx.conf /etc/nginx/nginx.conf
 COPY config/nginx.vh.default.conf /etc/nginx/conf.d/default.conf
