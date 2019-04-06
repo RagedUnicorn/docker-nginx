@@ -1,0 +1,15 @@
+schemaVersion: 2.0.0
+
+metadataTest:
+  env:
+    - key: 'NGINX_USER'
+      value: 'nginx'
+    - key: 'NGINX_USER'
+      value: 'nginx'
+    - key: 'NGINX_CACHE_DIRECTORY'
+      value: '/var/cache/nginx'
+  labels:
+    - key: 'com.ragedunicorn.maintainer'
+      value: 'Michael Wiesendanger <michael.wiesendanger@gmail.com>'
+  exposedPorts: ["80"]
+  entrypoint: ["/docker-entrypoint.sh"]
