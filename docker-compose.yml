@@ -2,7 +2,7 @@ version: '3.7'
 services:
   nginx:
     build: .
-    image: ragedunicorn/nginx:1.0.0-stable
+    image: ragedunicorn/nginx:${NGINX_TAG_VERSION}-stable
     ports:
       - "80:80"
     labels:
