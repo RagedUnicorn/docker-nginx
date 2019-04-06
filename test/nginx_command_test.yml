@@ -1,13 +1,8 @@
 schemaVersion: 2.0.0
 
 commandTests:
-- name: 'su_exec_installation'
-  command: "which"
-  args: ["su-exec"]
-  expectedOutput: ["/sbin/su-exec"]
-  exitCode: 0
 - name: 'nginx_version'
   command: "nginx"
   args: ["-v"]
-  expectedOutput: ["nginx version: nginx/1.15.8"]
+  expectedError: ["nginx version: nginx/1.15.8"]
   exitCode: 0
