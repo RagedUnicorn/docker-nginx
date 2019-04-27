@@ -12,7 +12,7 @@ LABEL com.ragedunicorn.maintainer="Michael Wiesendanger <michael.wiesendanger@gm
 # software versions
 ENV \
   NGINX_VERSION=1.15.8 \
-  GCC_VERSION=8.2.0-r2 \
+  GCC_VERSION=8.3.0-r0 \
   LIBC_DEV_VERSION=0.7.1-r0 \
   MAKE_VERSION=4.2.1-r2 \
   OPENSSL_DEV_VERSION=1.1.1b-r1 \
@@ -21,8 +21,8 @@ ENV \
   LINUX_HEADERS_VERSION=4.18.13-r1 \
   CURL_VERSION=7.64.0-r1 \
   GNUPG_VERSION=2.2.12-r0 \
-  LIBXSLT_DEV_VERSION=1.1.32-r0 \
-  GD_DEV_VERSION=2.2.5-r1 \
+  LIBXSLT_DEV_VERSION=1.1.33-r1 \
+  GD_DEV_VERSION=2.2.5-r3 \
   GEOIP_DEV=1.6.12-r1
 
 ENV \
